@@ -107,14 +107,19 @@ html{
 body{
     background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
-
 section#nav{
     background-color: #484848;
     height: 100%;
     width: auto;
     position: fixed;
     padding:5px;
+    display: flex;
+    flex-direction: column;
+}
+section#nav:last-child{
+    align-content: flex-end;
 }
 nav a:hover{
     color:white;
